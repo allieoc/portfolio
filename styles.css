@@ -282,9 +282,15 @@ input:-webkit-autofill, textarea:-webkit-autofill{
     .description-container{
         width: 80%;
     }
+
+    .screenshot-caption{
+        width: 80%;
+    }
 }
 
 @media (max-width: 700px){
+
+
     .toggle-button-container, .toggle-button-container.webdev{
         width: 90%;
     }
