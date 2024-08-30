@@ -20,11 +20,27 @@
             <a href="/contact.html">contact</a>
         </div>
     </header>
-    <main>
-    <div class="about-container">
-        <img src="/assets/headshot.png" class="headshot" />
-        <p class="about-me-blurb">I'm a video production pro with over 8 years of experience, starting out in the fast-paced world of local news editing before honing my production skills at Us Weekly for 5 years. Now, I'm a senior producer, editor and videographer at SHE Media. Along the way, I discovered a love for web development and completed a 7-month long front-end bootcamp, where I mastered HTML, CSS, JavaScript, and React. I’m that rare blend of creativity and technical know-how—whether I’m bringing visuals to life or coding something from scratch, I combine creative vision with technical skill to tackle any challenge. My goal is to turn your ideas into reality with a blend of smart solutions and a touch of creativity.</p>
-    </div>
+    <main class="form-container">
+        <form class="contact-form" id="contact-form">
+            <div class="form-line">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+            </div>
+            <div class="form-line">
+                <label for="email">Email address:</label><br>
+                <input type="email" id="email" name="email"><br>
+            </div>
+            <div class="form-line">
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div> 
+            <div class="form-line">
+                <input type="submit" id="submit" value="Send">
+            </div>
+        </form>
+        <div id="thank-you-message" style="display: none;">
+            Thank you for your message! <br> I'll get back to you shortly.
+        </div>
     </main>
     <footer>
         <div class="footer-banner">
@@ -41,8 +57,16 @@
             </div>
         </div>
     </footer>
+    <script src="contact.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "Sifmk3Mx-wVT0A50V",
+            });
+        })();
+    </script>
 </body>
 </html>
-
-
-
