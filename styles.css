@@ -217,7 +217,7 @@ width: 35%;
     font-family: 'Josefin Sans', sans-serif;
     border: 5px solid #2C666E;
     box-shadow: 0px 0px 0px 3px #90DDF0;
-    width: 40%;
+    width: 50%;
     border-radius: 10px;
     font-size: 16px;
     padding: 50px 0px;
@@ -316,13 +316,17 @@ input:-webkit-autofill, textarea:-webkit-autofill{
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: 0;
+        margin-top: 150px;
     }
 
     .headshot{
         width: 70%;
         margin-top: -150px;
         margin-bottom: -50px;
+    }
+
+    .contact-form{
+        width: 90%;
     }
 
 }
